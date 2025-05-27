@@ -14,7 +14,7 @@ def latest_subfolder(path):
 
 raw_folder = latest_subfolder(raw_base)
 
-base_output_folder = r"C:/Users/LeeEunseo/Desktop/영상 배속 적용/Fast_Forward_Videos"
+base_output_folder = r"C:/Users/LeeEunseo/Desktop/video-speed-too/Fast_Forward_Videos"
 output_base_names = {
     2: "Videos_2x",
     4: "Videos_4x",
