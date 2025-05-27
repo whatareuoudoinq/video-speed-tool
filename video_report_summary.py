@@ -6,7 +6,7 @@ import re
 
 base_dir = r"C:/Users/LeeEunseo/Desktop/video-speed-tool/Fast_Forward_Videos"
 folders = {
-    "1x": r"C:/Users/LeeEunseo/Desktop/video-speed-too/Videos_raw",
+    "1x": r"C:/Users/LeeEunseo/Desktop/video-speed-tool/Videos_raw",
     "2x": os.path.join(base_dir, "Videos_2x"),
     "4x": os.path.join(base_dir, "Videos_4x"),
     "8x": os.path.join(base_dir, "Videos_8x"),
