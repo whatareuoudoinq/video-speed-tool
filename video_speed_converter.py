@@ -4,7 +4,7 @@ from moviepy.editor import VideoFileClip, vfx
 import datetime
 
 # Folder paths
-raw_base = r"C:/Users/LeeEunseo/Desktop/영상 배속 적용/Videos_raw"
+raw_base = r"C:/Users/LeeEunseo/Desktop/video-speed-tool/Videos_raw"
 def latest_subfolder(path):
     try:
         subs = [f for f in os.listdir(path) if os.path.isdir(os.path.join(path, f))]
@@ -14,7 +14,7 @@ def latest_subfolder(path):
 
 raw_folder = latest_subfolder(raw_base)
 
-base_output_folder = r"C:/Users/LeeEunseo/Desktop/video-speed-too/Fast_Forward_Videos"
+base_output_folder = r"C:/Users/LeeEunseo/Desktop/video-speed-tool/Fast_Forward_Videos"
 output_base_names = {
     2: "Videos_2x",
     4: "Videos_4x",
