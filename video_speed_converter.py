@@ -1,10 +1,9 @@
-
 import os
 from moviepy.editor import VideoFileClip, vfx
 import datetime
 
 # Folder paths
-raw_base = r"C:/Users/LeeEunseo/Desktop/video-speed-tool/Videos_raw"
+raw_base = r"C:/Users/LeeEunseo/Documents/GitHub/video-speed-tool"
 def latest_subfolder(path):
     try:
         subs = [f for f in os.listdir(path) if os.path.isdir(os.path.join(path, f))]
@@ -12,9 +11,9 @@ def latest_subfolder(path):
     except:
         return None
 
-raw_folder = latest_subfolder(raw_base)
+raw_folder = raw_base
 
-base_output_folder = r"C:/Users/LeeEunseo/Desktop/video-speed-tool/Fast_Forward_Videos"
+base_output_folder = r"C:/Users/LeeEunseo/Documents/GitHub/video-speed-tool/Fast_Forward_Videos"
 output_base_names = {
     2: "Videos_2x",
     4: "Videos_4x",
@@ -61,6 +60,9 @@ for filename in os.listdir(raw_folder):
             except Exception as e:
                 print(f"  [Error] {filename}, {speed}x: {e}")
                 fail_count += 1
+
+print("▶ raw_folder:", raw_folder)
+print("▶ raw_folder에 있는 파일들:", os.listdir(raw_folder) if raw_folder else "raw_folder is None")
 
 print("\n All video speed conversions are complete.")
 print(f" Successful conversions: {success_count}")
